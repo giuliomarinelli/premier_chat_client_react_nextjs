@@ -3,10 +3,13 @@
 import { Provider } from "react-redux";
 import ThemeInitializer from "./ThemeInitializer";
 import store from "../redux-store/store";
+import { CustomThemeProvider } from "./CustomThemeProvider";
 
 const ThemeInitializerWrapper = () => (
     <Provider store={store}>
-        <ThemeInitializer />
+        <CustomThemeProvider>
+            <ThemeInitializer />
+        </CustomThemeProvider>
     </Provider>
 )
 
