@@ -1,9 +1,9 @@
 'use client'
-import React, { createContext, useMemo, ReactNode } from 'react';
+import React, { useMemo, ReactNode } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux-store/store';
 import { CssBaseline, Theme, ThemeProvider } from '@mui/material';
-import { darkTheme, lightTheme } from '../src/app/theme';
+import { darkTheme, lightTheme } from '../theme';
 
 
 interface CustomThemeProviderProps {
@@ -16,12 +16,10 @@ export const CustomThemeProvider: React.FC<CustomThemeProviderProps> = ({ childr
 
     const muiTheme: Theme = useMemo(() => (theme === 'light' ? lightTheme : darkTheme), [theme]);
 
-    console.log(muiTheme)
-
     return (
         <ThemeProvider theme={muiTheme}>
             <CssBaseline />
-            {children}S
+            {children}
         </ThemeProvider>
     );
 };

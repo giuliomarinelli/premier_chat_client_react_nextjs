@@ -7,7 +7,6 @@ const initialState = {
     value: Theme.LIGHT
 }
 
-
 const themeSlice = createSlice({
     name: "theme",
     initialState,
@@ -19,7 +18,6 @@ const themeSlice = createSlice({
             } else {
                 document.documentElement.classList.remove('dark')
             }
-            console.log(state.value)
         },
         toggleTheme: (state) => {
             state.value = state.value === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { AppDispatch, RootState } from "../redux-store/store"
 import { useEffect } from "react"
 import { setTheme } from "../redux-store/theme-slice"
-import { Theme } from "../Models/enums/theme.enum"
+import { Theme } from '../Models/enums/theme.enum'
 import { useColorScheme } from "@mui/material"
 
 const ThemeInitializer = () => {

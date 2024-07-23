@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Header from "./components/Header";
 
-export default function Home() {
-  return <p>home</p>
+const Home = () => {
+  return <h1>Hello World</h1>
 }
+
+export default Home

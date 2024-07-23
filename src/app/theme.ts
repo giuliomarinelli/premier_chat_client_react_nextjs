@@ -9,6 +9,9 @@ const lightThemeOptions: ThemeOptions = {
     secondary: {
       main: '#dc004e',
     },
+    background: {
+      default: '#f1f5f9'
+    }
   },
 };
 
@@ -21,6 +24,9 @@ const darkThemeOptions: ThemeOptions = {
     secondary: {
       main: '#f48fb1',
     },
+    background: {
+      default: '#262626'
+    }
   },
 };
 
